@@ -25,7 +25,7 @@ public class resultado extends AppCompatActivity {
     }
 
     public void ok (View v){
-        in = new Intent(resultado.this,Areas.class);
+        in = new Intent(resultado.this,principal.class);
         startActivity(in);
     }
 }

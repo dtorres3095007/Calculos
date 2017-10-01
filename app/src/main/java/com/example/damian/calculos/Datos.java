@@ -45,4 +45,43 @@ public static String CalcularAreaCuadrado(double l){
         GuardarOperacion(x);
         return Res + "";
     }
+
+    public static String CalcularVolumenEsfera(double r){
+        double Res = (4 * 3.14 * (r*r*r))/3;
+        Res = Res*100;
+        Res = java.lang.Math.round(Res);
+        Res = Res/100;
+        String datos = "Radio : " + r;
+        Operaciones x = new Operaciones("Volumen Esfera",datos,Res+"");
+        GuardarOperacion(x);
+        return Res+"";
+    }
+    public static String CalcularVolumenCilindro(double r,double a){
+        double Res = 3.14 * (r*r) * a;
+        Res = Res*100;
+        Res = java.lang.Math.round(Res);
+        Res = Res/100;
+        String datos = "Radio : " + r + " - "+"Atlura : " + a;
+        Operaciones x = new Operaciones("Volumen Cilindro",datos,Res+"");
+        GuardarOperacion(x);
+        return Res+"";
+    }
+    public static String CalcularVolumenCono(double r,double a){
+        double Res = (3.14 * (r*r) * a)/3;
+        Res = Res*100;
+        Res = java.lang.Math.round(Res);
+        Res = Res/100;
+        String datos = "Radio : " + r + " - "+"Atlura : " + a;
+        Operaciones x = new Operaciones("Volumen Cono",datos,Res+"");
+        GuardarOperacion(x);
+        return Res+"";
+    }
+
+    public static String CalcularVolumenCubo(double r){
+        double Res = (r*r*r);
+        String datos = "Arista : " + r ;
+        Operaciones x = new Operaciones("Volumen Cubo",datos,Res+"");
+        GuardarOperacion(x);
+        return Res+"";
+    }
 }

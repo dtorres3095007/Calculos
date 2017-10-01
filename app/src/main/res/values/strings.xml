@@ -31,6 +31,11 @@
     <string name="area_circulo">Area Circulo</string>
     <string name="radio">Radio</string>
     <string name="inicio">Inicio</string>
+    <string name="vol_esfera">Volumen Esfera</string>
+    <string name="vol_cilindro">Volumen Cilindro</string>
+    <string name="vol_cono">Volumen Cono</string>
+    <string name="vol_cubo">Volumen Cubo</string>
+    <string name="arista">Arista</string>
 
 
     <array name="opciones_principales">
@@ -51,6 +56,6 @@
         <item>@string/rectangulo</item>
         <item>@string/triangulo</item>
         <item>@string/circulo</item>
-        <item>@string/inicio</item>
+
     </array>
 </resources>
