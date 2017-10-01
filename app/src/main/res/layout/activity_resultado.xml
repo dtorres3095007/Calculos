@@ -19,6 +19,7 @@
             android:id="@+id/txttitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="serif"
             android:lineSpacingExtra="10sp"
             android:paddingBottom="30dp"
             android:textAlignment="center"

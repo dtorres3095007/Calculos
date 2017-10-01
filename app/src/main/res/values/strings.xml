@@ -22,6 +22,15 @@
     <string name="Borrar">Borrar</string>
     <string name="ok">ok</string>
     <string name="error_datos">Ingrese los Valores</string>
+    <string name="area_triangulu">Area Triangulo</string>
+    <string name="base">Base</string>
+    <string name="altura">Altura</string>
+    <string name="lado_a">Lado A</string>
+    <string name="lado_b">Lado B</string>
+    <string name="area_rectangulo">Area Rectangulo</string>
+    <string name="area_circulo">Area Circulo</string>
+    <string name="radio">Radio</string>
+    <string name="inicio">Inicio</string>
 
 
     <array name="opciones_principales">
@@ -42,5 +51,6 @@
         <item>@string/rectangulo</item>
         <item>@string/triangulo</item>
         <item>@string/circulo</item>
+        <item>@string/inicio</item>
     </array>
 </resources>

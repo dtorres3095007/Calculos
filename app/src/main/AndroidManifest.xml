@@ -20,7 +20,10 @@
         <activity android:name=".Volumenes" />
         <activity android:name=".Operaciones_realizadas" />
         <activity android:name=".Operar_Area_Cuadrado" />
-        <activity android:name=".resultado"></activity>
+        <activity android:name=".resultado" />
+        <activity android:name=".Operar_Area_Triangulo" />
+        <activity android:name=".Operar_Area_Rectangulo" />
+        <activity android:name=".Operar_Area_Circulo"></activity>
     </application>
 
 </manifest>

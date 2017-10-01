@@ -8,33 +8,32 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class Operar_Area_Cuadrado extends AppCompatActivity {
-    private EditText valor;
+public class Operar_Area_Circulo extends AppCompatActivity {
+    private EditText radio;
     private Intent in;
     private Resources resources;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_operar__area__cuadrado);
+        setContentView(R.layout.activity_operar__area__circulo);
         resources=this.getResources();
-        valor=(EditText)findViewById(R.id.txtdatoArea);
+        radio=(EditText)findViewById(R.id.txtradio);
     }
-
     public void  Aceptar(View v){
-        if (valor.getText().length()==0){
+        if (radio.getText().length()==0){
             Toast.makeText(this,resources.getString(R.string.error_datos),Toast.LENGTH_SHORT).show();
         }else{
-        double dato = Double.parseDouble(valor.getText().toString().trim());
-        String r = Datos.CalcularAreaCuadrado(dato);
-        principal.Titulo_Resultado = resources.getString(R.string.cuadrado);
-        principal.Titulo_datos = "Area : " + r;
-        in = new Intent(Operar_Area_Cuadrado.this,resultado.class);
-        startActivity(in);
+            double dato = Double.parseDouble(radio.getText().toString().trim());
+            String r = Datos.CalcularAreaCirculo(dato);
+            principal.Titulo_Resultado = resources.getString(R.string.circulo);
+            principal.Titulo_datos = "Area : " + r;
+            in = new Intent(Operar_Area_Circulo.this,resultado.class);
+            startActivity(in);
         }
     }
 
     public void  borrar(View v){
-     valor.setText("");
+        radio.setText("");
         //valor.setVisibility(View.INVISIBLE);
 
     }

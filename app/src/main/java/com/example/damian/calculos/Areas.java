@@ -32,11 +32,19 @@ public class Areas extends AppCompatActivity {
                         startActivity(in);
                         break;
                     case 1:
-                        // in = new Intent(principal.this,Volumenes.class);
+                        in = new Intent(Areas.this,Operar_Area_Rectangulo.class);
                         startActivity(in);
                         break;
                     case 2:
-                        //in = new Intent(principal.this,Operaciones_realizadas.class);
+                        in = new Intent(Areas.this,Operar_Area_Triangulo.class);
+                        startActivity(in);
+                        break;
+                    case 3:
+                        in = new Intent(Areas.this,Operar_Area_Circulo.class);
+                        startActivity(in);
+                        break;
+                    case 4:
+                        in = new Intent(Areas.this,principal.class);
                         startActivity(in);
                         break;
                 }
